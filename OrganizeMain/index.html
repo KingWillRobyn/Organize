@@ -1,5 +1,64 @@
 <DOCTYPE! html>
-<html>
-<head></head>
-<body></body>
-</html>
+  <html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Curia Regis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../OrganizeMain/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../OrganizeMain/css/style.css" />
+  </head>
+
+  <body>
+    <!--Jumbtron with header and alert info-->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Curia Regis</h1>
+        <h3>For your Royal Needs</h3>
+        <blockquote ><cite id="daily"></cite> </blockquote>
+      </div>
+    </div>
+
+
+    <!--Upcoming task. categorize by priority and type of task-->
+    <div class="taskBox " id="upcomingTask">
+      <h5><strong>Upcoming Task</strong></h5>
+      <div class="btn-group ">
+        <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Task Type
+          <span class="caret"></span></button>
+        <ul class="dropdown-menu" name='taskType' id='taskType'>
+          <li><a class="dropdown-item" value="dTask">Daily Task</a></li>
+          <li><a class="dropdown-item" value="remainder" >Reminders</a></li>
+          <li><a class="dropdown-item" value="bills">Bills</a></li>
+        </ul>
+
+    
+
+    <!--Task Working on (urgent -> mild) -->
+    <div class="taskBox" id="progressTask">
+      <h5><strong>Task In Progress</strong></h5>
+      <ul>
+        <li><input type="text" name="proTask" value="proTask"> </li>
+      </ul>
+
+
+
+    </div>
+
+    <!--Completed Task-->
+    <div class="taskBox" id="compTask">
+      <h5><strong>Completed Task</strong></h5>
+
+    </div>
+
+    <!--Footer for future date/ quick memo/calender-->
+    <div class="foot">
+      <p><strong>Misc.</strong></p>
+
+    </div>
+  </body>
+
+  </html>

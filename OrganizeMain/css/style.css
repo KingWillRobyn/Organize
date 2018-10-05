@@ -1,0 +1,74 @@
+.jumbotron{
+  text-align: center;
+  background-color: #102336;
+  color: silver;
+  }
+  blockquote {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-style: italic;
+      width: 400px;
+      margin: 0.25em 0;
+      padding: 0.25em 40px;
+      left:300px;
+      line-height: 1.45;
+      position: relative;
+      color: #383838;
+      background:#C0C0C0;
+  }
+
+  blockquote:before {
+      display: block;
+      content: "\201C";
+      font-size: 80px;
+      position: absolute;
+      left: -10px;
+      top: -25px;
+      color: #FFFAFA;
+  }
+
+  blockquote cite {
+      color: #102336;
+      font-size: 14px;
+      display: block;
+      margin-top: 5px;
+  }
+
+  blockquote cite:before {
+      content: "\2014 \2009";
+  }
+
+  .taskBox{
+    color: #a1a8b2;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 10px;
+    position: relative;
+    padding-top: -30px;
+    margin: 30px;
+    height: 300px;
+    width: 300px;
+    left: 150px;
+    text-align: center;
+    background-color: #102336;
+  }
+  /* #upcomingTask{ top:75px;} */
+  #compTask{ top: 5px;}
+  ul{
+    list-style: none;
+  }
+
+  .foot{
+    width: 900px;
+    height: 200px;
+    border: 3px solid black;
+    position: relative;
+    left: 250px;
+    text-align: center;
+    color: a1a8b2;
+    background-color: #102336;
+  }
+
+  body{
+    background-color: #d6d6d6;
+  }
