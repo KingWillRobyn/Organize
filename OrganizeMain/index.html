@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../OrganizeMain/js/Service/service.js"></script>
     <script src="../OrganizeMain/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="../OrganizeMain/css/style.css" />
   </head>
@@ -18,47 +21,60 @@
       <div class="jumbotron">
         <h1>Curia Regis</h1>
         <h3>For your Royal Needs</h3>
-        <blockquote ><cite id="daily"></cite> </blockquote>
+        <blockquote><cite id="daily"></cite> </blockquote>
       </div>
     </div>
 
 
     <!--Upcoming task. categorize by priority and type of task-->
-    <div class="taskBox " id="upcomingTask">
-      <h5><strong>Upcoming Task</strong></h5>
-      <div class="btn-group ">
-        <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Task Type
-          <span class="caret"></span></button>
-        <ul class="dropdown-menu" name='taskType' id='taskType'>
-          <li><a class="dropdown-item" value="dTask">Daily Task</a></li>
-          <li><a class="dropdown-item" value="remainder" >Reminders</a></li>
-          <li><a class="dropdown-item" value="bills">Bills</a></li>
-        </ul>
+    <div class="box">
+      <div class="taskBox " id="upcomingTask">
+        <h5><strong>Upcoming Task</strong></h5>
+        <div id=addB>
+          <button class="btn btn-primary" id="add">Add</button>
+        </div>
+        <ul class="list-group" id="task">
 
-    
+        </ul>
+        <!-- <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Task Type
+        <span class="caret"></span></button> -->
+      </div>
+    </div>
 
     <!--Task Working on (urgent -> mild) -->
-    <div class="taskBox" id="progressTask">
-      <h5><strong>Task In Progress</strong></h5>
-      <ul>
-        <li><input type="text" name="proTask" value="proTask"> </li>
-      </ul>
-
-
-
+    <div class="box">
+      <div class="taskBox" id="progressTask">
+        <h5><strong>Task In Progress</strong></h5>
+        <ul>
+          <li><input type="text" name="proTask" value="proTask"> </li>
+        </ul>
+      </div>
     </div>
 
     <!--Completed Task-->
-    <div class="taskBox" id="compTask">
-      <h5><strong>Completed Task</strong></h5>
+    <div class="box">
 
+      <div class="taskBox" id="completed">
+        <h5><strong>Completed Task</strong></h5>
+
+      </div>
     </div>
 
     <!--Footer for future date/ quick memo/calender-->
-    <div class="foot">
-      <p><strong>Misc.</strong></p>
-
-    </div>
+    <!-- <div class="foot container">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Button with data-target
+      </button>
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Link with href
+      </a>
+      <div class="collapse" id="collapseExample">
+        <div class="well">
+          <p><strong>Misc.</strong></p>
+          ...
+        </div>
+      </div>
+    </div> -->
   </body>
 
   </html>
